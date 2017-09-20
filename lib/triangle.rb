@@ -9,7 +9,7 @@ class Triangle
     def kind
       # sides = @a, @b, @c
 
-      if @a <= 0 #addresses no size and negative size
+      if @a <= 0 || @b <= 0 || @c <= 0 #addresses no size and negative size
           raise TriangleError,   "Illegal triangle, sides must be greater than zero"
         end
 
