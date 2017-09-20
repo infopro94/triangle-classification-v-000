@@ -10,7 +10,7 @@ class Triangle
       sides = @a, @b, @c
       if @a <= 0 #addresses no size and negative size
         begin
-          raise TriangleError 
+          raise TriangleError
         rescue TriangleError => error
           puts error.message_one
         elsif @a + @b <= @c #addresses inequality rule
@@ -37,5 +37,5 @@ class TriangleError < StandardError
       "Illegal triangle, violates triangle inequality"
     end
 
-      
+
   end
