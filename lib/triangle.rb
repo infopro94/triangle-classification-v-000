@@ -17,7 +17,7 @@ class Triangle
           raise TriangleError, "Illegal triangle, violates triangle inequality"
         end
 
-        if @a == @b && @a == @c
+        if @a == @b && @a == @c && @b == @c
           :equilateral
         elsif @a == @b || @a == @c || @b == @c
           :isosceles
