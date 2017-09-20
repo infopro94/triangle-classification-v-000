@@ -8,11 +8,11 @@ class Triangle
 
     def kind
       sides = @a, @b, @c
-      
+
       if @a <= 0 #addresses no size and negative size
           raise TriangleError,   "Illegal triangle, sides must be greater than zero"
         end
-        
+
       if @a + @b <= @c #addresses inequality rule
           raise TriangleError, "Illegal triangle, violates triangle inequality"
         end
