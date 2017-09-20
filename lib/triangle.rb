@@ -18,7 +18,7 @@ class Triangle
         rescue TriangleError => error
           puts error.message_two
         end
-          
+
         if @a == @b && @a == @c
           :equilateral
         elsif @a == @b || @a == @c || @b == @c
