@@ -13,7 +13,7 @@ class Triangle
           raise TriangleError
         rescue TriangleError => error
           puts error.message_one
-        elsif @a + @b <= @c #addresses inequality rule
+        else @a + @b <= @c #addresses inequality rule
           raise TriangleError
         rescue TriangleError => error
           puts error.message_two
