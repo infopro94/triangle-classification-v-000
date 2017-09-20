@@ -13,7 +13,7 @@ class Triangle
           raise TriangleError,   "Illegal triangle, sides must be greater than zero"
         end
 
-      if @a^2 + @b^2 != @c^2 #addresses inequality rule
+      if @a + @b <= @c || @b + @c <= @a || @c + @a <= @b #addresses inequality rule
           raise TriangleError, "Illegal triangle, violates triangle inequality"
         end
 
