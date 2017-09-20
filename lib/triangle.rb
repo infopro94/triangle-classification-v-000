@@ -37,4 +37,5 @@ class TriangleError < StandardError
     def message_two
       "Illegal triangle, violates triangle inequality"
     end
+  end
 end
