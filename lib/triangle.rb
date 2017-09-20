@@ -26,7 +26,7 @@ class Triangle
         else
           :scalene
       end
-    # end
+     end
 end
 
 class TriangleError < StandardError
@@ -37,6 +37,4 @@ class TriangleError < StandardError
     def message_two
       "Illegal triangle, violates triangle inequality"
     end
-
-
-  end
+end
