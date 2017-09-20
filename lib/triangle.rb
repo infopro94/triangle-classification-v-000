@@ -17,7 +17,9 @@ class Triangle
           raise TriangleError
         rescue TriangleError => error
           puts error.message_two
-        elsif @a == @b && @a == @c
+        end
+          
+        if @a == @b && @a == @c
           :equilateral
         elsif @a == @b || @a == @c || @b == @c
           :isosceles
@@ -25,7 +27,6 @@ class Triangle
           :scalene
       end
     end
-
 end
 
 class TriangleError < StandardError
